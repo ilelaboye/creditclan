@@ -36,9 +36,9 @@
                     <div class="todo-footer">
                         <span> {{ totalActiveTotal }} items left</span>
                         <div class="filter d-none d-lg-inline">    
-                            <a href="" class="active" @click.prevent="setFilter('all')">All</a>
-                            <a href="" @click.prevent="setFilter(false)">Active</a>
-                            <a href="" @click.prevent="setFilter(true)">Completed</a>
+                            <a href="javascript:void()" class="active" @click.prevent="setFilter('all')">All</a>
+                            <a href="javascript:void()" @click.prevent="setFilter(false)">Active</a>
+                            <a href="javascript:void()" @click.prevent="setFilter(true)">Completed</a>
                         </div>
                         <a href="javascript:void" @click.prevent="clearCompleted()"> Clear Completed</a>
                     </div>
@@ -46,9 +46,9 @@
 
                 <div class="filter-card d-flex d-lg-none mt-4">
                     <div class="filter-links">
-                        <a href="" class="active">All</a>
-                        <a href="">Active</a>
-                        <a href="javascript:void" @click.prevent="">Completed</a>
+                        <a href="javascript:void()" @click.prevent="setFilter('all')" class="active">All</a>
+                        <a href="javascript:void()" @click.prevent="setFilter(false)">Active</a>
+                        <a href="javascript:void" @click.prevent="setFilter(true)">Completed</a>
                     </div>
                 </div>
             </div>
